@@ -14,7 +14,7 @@ $(document).ready(function() {
     $("#currentDay").text(moment().format("MMMM Do, YYYY, h:mm a"));
     
 //Checking the time to determine whether present, past, or future
-function hourTracker() {
+function hourTime() {
     // Current number of hours
     var currentHour = moment().hour();
 
@@ -168,7 +168,7 @@ function hourTracker() {
         }
     })
 }
-hourTracker();
+hourTime();
 
 $(".saveBtn").on("click", function () {
     event.preventDefault();
